@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/product_image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_product_placeholder" />
+
+    <TextView
+        android:id="@+id/product_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/product_image"
+        android:padding="10dp"
+        android:textSize="18sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="Product Name" />
+
+    <TextView
+        android:id="@+id/product_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/product_name"
+        android:padding="10dp"
+        android:textSize="16sp"
+        android:textColor="@color/colorAccent"
+        android:text="Product Price" />
+
+    <TextView
+        android:id="@+id/product_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/product_price"
+        android:padding="10dp"
+        android:textSize="14sp"
+        android:textColor="@color/colorTextSecondary"
+        android:text="Product Description" />
+
+    <Button
+        android:id="@+id/add_to_cart_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/product_description"
+        android:layout_margin="10dp"
+        android:text="Add to Cart"
+        android:background="@color/colorAccent"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>
